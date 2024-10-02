@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments - MercyLite Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo.png" alt="MercyLite Hospital Logo" class="logo">
+            <nav class="nav-bar">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About Us</a>
+                <a href="appointments.html">Appointments</a>
+                <a href="news.html">News</a>
+                <a href="feedback.html">Feedback</a>
+            </nav>
+            <div class="contact-info">
+                <p>Email: info@mercylitehospital@gmail.com</p>
+                <p>Phone: 0708764052/0723008007</p>
+				<p> 0711162999 <p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="section-title">Book an Appointment</h2>
+        <p>To schedule an appointment, please fill out the form below:</p>
+        
+        <form action="submit-appointment.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <input type="submit" value="Submit">
+        </form>
+		<div class="insurance-slider">
+    <div class="slider">
+        <img src="images/insurance1.png" alt="Insurance 1" style="display:block;">
+        <img src="images/insurance2.png" alt="Insurance 2" style="display:none;">
+        <img src="images/insurance3.png" alt="Insurance 3" style="display:none;">
+        <img src="images/insurance4.png" alt="Insurance 4" style="display:block;">
+        <img src="images/insurance5.png" alt="Insurance 5" style="display:none;">
+        
+        <!-- Add more images as needed -->
+    </div>
+</div>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Connect and follow us on:</p>
+            <p>
+                <a href="#">Facebook</a> | <a href="#">TikTok</a>
+            </p>
+            <p>Email us at: info@mercylitehospital@gmail.com</p>
+            <p>&copy; 2024 MercyLite Hospital Limited. All rights reserved. Done by Eclipse.</p>
+        </div>
+    </footer>
+	<script src="script.js"></script>
+
+</body>
+</html>

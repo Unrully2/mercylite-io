@@ -1,0 +1,164 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
+.feature-image {
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.section-title {
+    font-size: 1.5em;
+    color: #333;
+    margin: 20px 0;
+}
+
+.sub-title {
+    font-size: 1.2em;
+    color: #4caf50;
+    margin-top: 10px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background-color: #e8f5e9;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    flex: 1 1 30%;
+}
+
+.cta-section {
+    background-color: #c8e6c9;
+    text-align: center;
+    padding: 20px;
+}
+
+.cta-link {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.insurance-slider {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.slider img {
+    width: 100px;
+    margin: 10px;
+}
+
+.footer-content {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        flex: 1 1 80%;
+    }
+}
+.menu-toggle {
+    display: none; /* Hidden by default */
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav-bar {
+    display: flex; /* Default display */
+    transition: max-height 0.3s ease-out;
+}
+
+.nav-bar.active {
+    display: block; /* Show on toggle */
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%; /* Ensure images are responsive */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show hamburger on small screens */
+    }
+
+    .nav-bar {
+        display: none; /* Hide navigation links initially */
+        flex-direction: column; /* Stack vertically */
+    }
+
+    .nav-bar.active {
+        display: flex; /* Show when active */
+    }
+}

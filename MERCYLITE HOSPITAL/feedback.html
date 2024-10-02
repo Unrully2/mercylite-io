@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - MercyLite Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo.png" alt="MercyLite Hospital Logo" class="logo">
+            <nav class="nav-bar">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About Us</a>
+                <a href="appointments.html">Appointments</a>
+                <a href="news.html">News</a>
+                <a href="feedback.html">Feedback</a>
+            </nav>
+            <div class="contact-info">
+                <p>Email: info@mercylitehospital@gmail.com.com</p>
+                <p>Phone: 0708764052/0723008007</p>
+				<p> 0711162999 </P>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="section-title">We Value Your Feedback</h2>
+        <p>Please let us know about your experience at MercyLite Hospital:</p>
+        
+        <form action="submit-feedback.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+            
+            <input type="submit" value="Submit">
+        </form>
+		<section class="insurance-slider">
+            <h2 class="section-title">Insurance Accepted</h2>
+            <div class="slider">
+                <img src="insurance1.png" alt="Insurance 1">
+                <img src="insurance2.png" alt="Insurance 2">
+                <img src="insurance3.png" alt="Insurance 3">
+				<img src="insurance4.png" alt="Insurance 4">
+				<img src="insurance5.png" alt="Insurance 5">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Connect and follow us on:</p>
+            <p>
+                <a href="#">Facebook</a> | <a href="#">TikTok</a>
+            </p>
+            <p>Email us at: info@mercylitehospital@gmail.com</p>
+            <p>&copy; 2024 MercyLite Hospital Limited. All rights reserved. Done by Eclipse.</p>
+        </div>
+    </footer>
+	<script src="script.js"></script>
+
+</body>
+</html>
